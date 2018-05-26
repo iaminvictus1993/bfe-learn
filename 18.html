@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>任务18</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .title {
+            margin: 0 auto;
+            width: 100px;
+            transition: all .8s;
+        }
+        .titleColor {
+            color: blue;
+        }
+        .underline {
+            content: "";
+            height: 5px;
+            background: blue;
+            margin: 0 auto;
+            width: 0;
+            transition: all .8s;
+        }
+        .underlineA {
+            width: 100px;
+        }
+
+        .button {
+            border: 1px solid black;
+            width: 100px;
+            margin: 50px auto;
+            padding: 10px 0;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="title">前端学院</h3>
+        <div class="underline"></div>
+        <div class="button">切换样式</div>
+    </div>
+
+</body>
+<script>
+    function toggleClassName(params) {
+        var currentClassName = document.querySelector('.underline').className
+        var currentTitleClassName = document.querySelector('.title').className
+        document.querySelector('.underline').className = currentClassName === 'underline' ? 'underline underlineA' : 'underline'
+        document.querySelector('.title').className = currentTitleClassName === 'title' ? 'title titleColor' : 'title'
+    }
+    document.querySelector('.button').onclick = toggleClassName
+    document.querySelector('.button').onmousedown = function () { this.style.backgroundColor = 'blue' }
+    document.querySelector('.button').onmouseup = function () { this.style.backgroundColor = 'transparent' }
+</script>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            width: 250px;
+            height: 350px;
+        }
+
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 350px;
+            transition: all 1s linear;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            background: url('../static/img/back.jpg');
+            transform: rotateY(180deg);
+        }
+
+        .front {
+            background: url('../static/img/front.jpg');
+
+        }
+
+        .container:hover .front {
+            transform: rotateY(180deg);
+        }
+        .container:hover .back {
+            transform: rotateY(0deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img front"></div>
+        <div class="img back"></div>
+    </div>
+
+</body>
+
+</html>

@@ -35,8 +35,12 @@
             width: 180px;
             height: 100px;
             margin: 0 10px;
+            filter: brightness(0.5);
+            cursor: pointer;
         }
-
+        .footerImg:hover {
+            filter: brightness(1);
+        }
         /* 特效 */
 
         @keyframes mymove {
@@ -74,6 +78,7 @@
                 transform: scale(1)
             }
         }
+
         @keyframes mix {
             0% {
                 transform: scale(0.1) rotate(-360deg)
@@ -98,6 +103,7 @@
         .a4 {
             animation: myscale2 1s ease-out;
         }
+
         .a5 {
             animation: mix 0.7s ease-in-out;
         }

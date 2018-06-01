@@ -9,6 +9,8 @@
 
  **No.6 - 利用 CSS animation 制作一个炫酷的 Slider**  [demo](https://rianran1993.github.io/bfe-learn/design-college/No6.html)
 
+ **No.7 - 使用 animate.css 实现一个优雅的登录框**  [demo](https://rianran1993.github.io/bfe-learn/design-college/No7.html)
+
 
 
 
